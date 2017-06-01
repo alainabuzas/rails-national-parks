@@ -1,0 +1,43 @@
+// Place all the styles related to the parks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+    font-family: "Istok Web", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+button {
+    background-color: #4B5E26;
+    color: #fff;
+    border: none;
+    border-radius: 5%;
+    font-size: 20px;
+    padding: 10px;
+}
+
+button a {
+    color: #fff;
+}
+
+.hp {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ec/USPS_National_Park_Service_1934.jpg');
+    min-height: 100vh;
+    padding-top: 10em;
+    background-repeat: no-repeat;
+}
+
+.hp-intro {
+    background-color: #fff;
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+}

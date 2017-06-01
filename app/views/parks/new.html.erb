@@ -1,0 +1,13 @@
+<h2>Add a New Park to Your Passport</h2>
+	<%= form_for @park do |p|%>
+	<%= p.label :name %>
+	<%= p.text_field :name %>
+	<br>
+	<%= p.label :description %>
+	<%= t.text_field :description %>
+	<br>
+	<%= p.label :picture %>
+	<%= p.text_field :picture %>
+	<br>
+	<%= p.submit %>
+<% end %>

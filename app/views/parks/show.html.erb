@@ -1,0 +1,8 @@
+<h2><%= @park.name %></h2>
+<p><%= @park.description %></p>
+<p><img src="<%= @park.picture %>"></p>
+<div>
+<a href="/parks/<%=@park.id%>/edit"><button>Edit This Park Entry</button></a>
+<button><%= link_to "Delete Park Entry", park_path(@park.id), method: :delete%></button>
+<a href="/parks/"><button>Back to List</button></a>
+</div>
