@@ -7,6 +7,7 @@
 
 a {
     text-decoration: none;
+    color: #4B5E26;
 }
 
 .container {
@@ -40,4 +41,28 @@ button a {
     width: 40%;
     margin: auto;
     padding: 20px;
+}
+
+.logo {
+    width: 15%;
+}
+
+.list-pg {
+    background-color: #DDCCBA;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.all-parks {
+    display: flex;
+    flex-direction: column;
+}
+
+.one-park {
+    max-width: 40%;
+    margin: auto;
+}
+
+.park-photo {
+    max-width: 100%;
 }

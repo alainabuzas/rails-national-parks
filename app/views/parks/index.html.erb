@@ -1,11 +1,15 @@
+<div class="list-pg">
+<img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/US-NationalParkService-ShadedLogo.svg/786px-US-NationalParkService-ShadedLogo.svg.png">
 <h1>National Parks Passport</h1>
 <h4>A Collection of National Parks Visited</h4>
-<div class="one-park">
-	<% @parks.each do |park| %>
-	<a href="/parks/<%= park.id %>">
-	<h2><%= park.name %></h2>
-	</a>
-	<p><%= park.description %></p>
-	<p><img src="<%= park.picture %>"></p>
-	<% end %>
+<div class="all-parks">
+	<div class="one-park">
+		<% @parks.each do |park| %>
+		<a href="/parks/<%= park.id %>">
+		<h2><%= park.name %></h2>
+		</a>
+		<p><img src="<%= park.picture %>" class="park-photo"></p>
+		<% end %>
+	</div>
+</div>
 </div>
