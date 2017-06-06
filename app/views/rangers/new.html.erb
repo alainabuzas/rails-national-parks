@@ -1,0 +1,7 @@
+<h2>Add a Ranger to Your Park</h2>
+	<%= form_for @ranger do |r|%>
+	<%= r.label :name %>
+	<%= r.text_field :name %>
+	<br>
+	<%= r.submit %>
+<% end %>

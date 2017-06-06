@@ -1,0 +1,14 @@
+<div class="list-pg">
+	<img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/US-NationalParkService-ShadedLogo.svg/786px-US-NationalParkService-ShadedLogo.svg.png">
+	<h1>National Parks Passport</h1>
+	<h4>These Rangers Help Maintain Our Parks</h4>
+	<div class="all-rangers">
+		<div class="one-ranger">
+			<% @rangers.each do |ranger| %>
+			<a href="/rangers/<%= ranger.id %>">
+				<h2><%= ranger.name %></h2>
+			</a>
+			<% end %>
+		</div>
+	</div>
+</div>

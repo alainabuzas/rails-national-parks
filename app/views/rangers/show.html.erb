@@ -1,0 +1,5 @@
+<h2><%= @ranger.name %></h2>
+<a href="/rangers/<%=@ranger.id%>/edit"><button>Edit This Ranger Entry</button></a>
+<button><%= link_to "Delete Ranger Entry", ranger_path(@ranger.id), method: :delete%></button>
+<a href="/rangers/"><button>Back to List</button></a>
+</div>
