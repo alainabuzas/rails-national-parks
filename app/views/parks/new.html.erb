@@ -9,5 +9,7 @@
 	<%= p.label :picture %>
 	<%= p.text_field :picture %>
 	<br>
+	<%= p.collection_check_boxes :ranger_ids, @rangers, :id, :name %>
+	<br>
 	<%= p.submit %>
 <% end %>

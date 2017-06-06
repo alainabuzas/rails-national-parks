@@ -9,6 +9,7 @@ class ParksController < ApplicationController
 
   def edit
     @park = Park.find(params[:id])
+    @rangers = Ranger.all
   end
 
   def show
@@ -27,6 +28,7 @@ class ParksController < ApplicationController
   end
 
   def destroy
+    Park.find(params[:id]).rangers.clear
     Park.find(params[:id]).delete
     redirect_to parks_path
   end
@@ -34,7 +36,7 @@ class ParksController < ApplicationController
   private
 
   def park_params
-    params.require(:park).permit(:name, :description, :picture)
+    params.require(:park).permit(:name, :description, :picture, :ranger_ids => [])
   end
 
 end

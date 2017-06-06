@@ -27,6 +27,7 @@ class RangersController < ApplicationController
   end
 
   def destroy
+    Ranger.find(params[:id]).parks.clear
   	Ranger.find(params[:id]).delete
   	redirect_to rangers_path
   end
@@ -34,7 +35,7 @@ class RangersController < ApplicationController
   private
 
   def ranger_params
-  		params.require(:ranger).permit(:name)
+  		params.require(:ranger).permit(:name, :park_ids => [])
   end
 
 end
